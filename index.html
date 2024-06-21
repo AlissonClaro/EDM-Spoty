@@ -16,47 +16,50 @@
 </head>
 
 <body>
-    <h1>⚡EDM Spoty⚡</h1>
-    <h3>⚡</h3>
-    <img src="./resource/img-1.jpg" alt="Img-EDM-Spoty">
-    <div data-aos="fade-left"
-    data-aos-anchor="#example-anchor"
-    data-aos-offset="500"
-    data-aos-duration="1000" class="description">
-        <h2>Nome da Música</h2>
-        <i>Autor</i>
-    </div>
+    <div class="container">
+        <h1>⚡EDM Spoty⚡</h1>
+        <h3>⚡</h3>
+        <img src=" ./resource/img-1.jpg" alt="Img-EDM-Spoty">
+            <div data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="1000"
+                class="description">
+                <h2>Nome da Música</h2>
+                <i>Autor</i>
+            </div>
 
-    <div class="progress-bar">
-        <div class="bar">
-            <progress value="0" max="100""></progress>
-            <div class=" point">
+            <div class="progress-bar">
+                <div class="bar">
+                    <progress value="0" max="100""></progress>
+                <div class=" point">
+                </div>
+            </div>
+
+            <div class="time">
+                <p class="start">00:00</p>
+                <p class="end"">00:00</p>
+            </div>
         </div>
-    </div>
 
-    <div class="time">
-        <p class="start">00:00</p>
-        <p class="end"">00:00</p>
+        <div class=" controls">
+                    <i class="fas fa-step-backward setas anterior"></i>
+                    <i class="fas fa-play-circle botao-play"></i>
+                <div class="pause">
+                    <i class="fas fa-pause-circle botao-pause"></i>
+                </div>
+                <i class="fas fa-step-forward setas proximo"></i>
         </div>
-    </div>
 
-    <div class=" controls">
-            <i class="fas fa-step-backward setas anterior"></i>
-            <i class="fas fa-play-circle botao-play"></i>
-        <div class="pause">
-            <i class="fas fa-pause-circle botao-pause"></i>
-        </div>
-        <i class="fas fa-step-forward setas proximo"></i>
-    </div>
+        <audio class="audio" src="./music/Alienígena (Original Mix) ft. Alien Code - Chapeleiro.mp3"
+            type='audio/mpeg'></audio>
 
-    <audio class="audio" src="./music/Alienígena (Original Mix) ft. Alien Code - Chapeleiro.mp3" type='audio/mpeg'></audio>
-
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
-    <script src="./script.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+        
    
+        <script>
+            AOS.init();
+        </script>
+        <script src="./script.js"></script>
+    </div>
 </body>
 
 </html>
