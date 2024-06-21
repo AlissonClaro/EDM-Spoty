@@ -1,11 +1,12 @@
-*{
-box-sizing: border-box;
+* {
+    box-sizing: border-box;
 }
 
-body, html {
+body,
+html {
     padding: 0;
     margin: 0;
-        
+
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -16,11 +17,13 @@ body, html {
     color: #ddd;
     font-family: "Montserrat", sans-serif;
 }
+
 h1 {
     margin-bottom: 5px;
-    text-align: center; 
+    text-align: center;
     font-weight: 700;
 }
+
 h3 {
     font-size: 25px;
     font-weight: 400;
@@ -89,7 +92,6 @@ progress {
 
     display: flex;
     align-items: center;
-    
 }
 
 .controls {
@@ -98,7 +100,6 @@ progress {
     align-items: center;
     justify-content: space-around;
     margin-top: 15px;
-    
 }
 
 .botao-play {
@@ -118,4 +119,199 @@ progress {
 .botao-pause {
     font-size: 50px;
     cursor: pointer;
+}
+
+/* Estilos para dispositivos móveis */
+
+@media (max-width: 480px) {
+
+    .music-player {
+        text-align: center;
+        padding: 20px;
+    }
+
+    img {
+        max-width: 100%;
+        border-radius: 50%;
+    }
+
+    h1 {
+        margin: 0;
+        margin-bottom: 5%;
+        font-size: 25px;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+        margin: 1rem 0 0 0;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    i {
+        font-size: 1.5rem;
+        margin: 1.5rem;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    h3 {
+        display: none;
+    }
+
+    .container {
+        width: 100%;
+        /* Ajuste a largura para ocupar toda a tela */
+    }
+
+    img {
+        width: 90%;
+        /* Ajuste a largura da imagem para ocupar toda a largura disponível */
+        height: auto;
+        /* Mantenha a proporção da imagem */
+        margin: 0;
+
+        border-radius: 50%;
+    }
+
+    .progress-bar {
+        width: 90%;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+        margin-left: 6%;
+    }
+
+    .bar {
+        width: 90%;
+    }
+
+    progress {
+        width: 90%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .point {
+        width: 20px;
+        height: 20px;
+    }
+
+    .time {
+        width: 90%;
+        margin-top: 5px;
+    }
+
+    .controls {
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+
+
+/* Estilos para dispositivos móveis "375px" */
+
+@media (max-width: 375px) {
+
+    .music-player {
+        text-align: center;
+        padding: 20px;
+    }
+
+    img {
+        max-width: 90%;
+        margin: 0 0 30px 0;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    h1 {
+        margin: 0;
+        margin-bottom: 5%;
+        font-size: 25px;
+    }
+
+    h2 {
+        font-size: 1rem;
+        margin: 1rem;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    i {
+        font-size: 1rem;
+        margin: 1rem;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    h3 {
+        display: none;
+    }
+
+    .container {
+        width: 100%;
+        /* Ajuste a largura para ocupar toda a tela */
+    }
+
+    img {
+        width: 100%;
+        /* Ajuste a largura da imagem para ocupar toda a largura disponível */
+        height: auto;
+        /* Mantenha a proporção da imagem */
+        margin: 0;
+        border-radius: 50%;
+    }
+
+    .progress-bar {
+        width: 90%;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+        margin-left: 6%;
+    }
+
+    .bar {
+        width: 90%;
+    }
+
+    progress {
+        width: 90%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .point {
+        width: 20px;
+        height: 20px;
+    }
+
+    .time {
+        width: 90%;
+        margin-top: 5px;
+    }
+
+    .controls {
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin: 0;
+        padding: 0;
+    }
 }
