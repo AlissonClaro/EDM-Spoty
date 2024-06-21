@@ -12,5 +12,3 @@
 <center><h2>Imagens do projeto Mobile</h2>
 <img src="resource/cell screen.png"></center>
 <br>
-.
-
