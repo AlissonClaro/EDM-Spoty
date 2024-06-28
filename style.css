@@ -17,9 +17,9 @@ body, html {
     font-family: "Montserrat", sans-serif;
 }
 .container{
-    width: 500px;
+    width: 100vw;
     text-align: center;
-    height: 100vh;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
